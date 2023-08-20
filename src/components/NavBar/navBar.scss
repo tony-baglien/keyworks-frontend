@@ -1,0 +1,19 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/typography";
+
+header {
+    .nav_area {
+        display: grid;
+        grid-template-columns: 1fr 50px;
+        justify-items: center;
+        align-items: center;
+        min-height: 80px;
+        background-color: $neon-blue;
+
+        .logo {
+            font-family: $header-font-family;
+            font-size: $h2;
+            color: $white;
+        }
+    }
+}
