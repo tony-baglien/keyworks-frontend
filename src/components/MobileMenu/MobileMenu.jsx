@@ -1,4 +1,5 @@
 import "./mobileMenu.scss";
+import PropTypes from "prop-types";
 
 import menuItems from "./subComponents/menuItems";
 
@@ -14,6 +15,10 @@ const MobileMenu = ({ toggleOpen }) => {
             </nav>
         )
     );
+};
+
+MobileMenu.propType = {
+    toggleOpen: PropTypes.bool,
 };
 
 export default MobileMenu;

@@ -1,4 +1,5 @@
 import "./mobileMenuIcon.scss";
+import PropTypes from "prop-types";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
@@ -19,6 +20,10 @@ const MobileMenuIcon = ({ onMenuClick }) => {
             onClick={handleMenuClick}
         />
     );
+};
+
+MobileMenuIcon.propTypes = {
+    onMenuClick: PropTypes.func,
 };
 
 export default MobileMenuIcon;
