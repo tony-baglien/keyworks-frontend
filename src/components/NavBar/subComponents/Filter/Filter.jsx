@@ -7,7 +7,7 @@ import { changeKeycapUrl } from "../../../../features/urls/keycapUrlSlice"
 import { changeKeyswitchUrl } from "../../../../features/urls/keyswitchUrlSlice"
 import { toggleMenu } from "../../../../features/filter/filterSlice"
 import KeySwitchMenu from "./filterMenu/KeySwitchMenu"
-import KeyCapMenu from "./filterMenu/keyCapMenu"
+import KeyCapMenu from "./filterMenu/KeycapMenu"
 
 const Filter = ({isHidden}) => {
     const dispatch = useDispatch();
