@@ -4,7 +4,7 @@ import { updatekeyCapData, toggleLoading } from "../features/urls/keycapUrlSlice
 import Loading from "../components/loading/Loading";
 import { CSSTransition } from "react-transition-group";
 
-import Card from "../components/Cards/KeycapCard";
+import Card from "../components/Cards/KeyCapCard";
 
 const KeyCaps = () => {
     const dispatch = useDispatch();
