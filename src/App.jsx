@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home";
-import KeyCaps from "./pages/keyCaps";
-import KeySwitches from "./pages/keySwitches";
+import KeyCaps from "./pages/KeyCaps";
+import KeySwitches from "./pages/KeySwitches";
 import FullKits from "./pages/FullKits";
 //SASS RESET
 import "./sassStyles/main.scss";
