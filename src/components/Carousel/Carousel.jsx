@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./carousel.scss";
+import "./Carousel.scss";
 const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const data = ["src/assets/img/fullKitAngle.svg","src/assets/img/fullKitProfile.svg","src/assets/img/keySwitch.svg"]
