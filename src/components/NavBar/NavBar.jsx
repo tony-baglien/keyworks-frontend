@@ -33,7 +33,9 @@ const NavBar = () => {
 
     return (
         <header ref={headerRef}>
+            <Link to={"/"} className="logo_wrapper">
             <h1 className="logo">KeyWorks</h1>
+            </Link>
             <nav ref={navRef}>
                 {menuItems.map((item) => (
                     <Link key={item.id} to={item.path} onClick={toggleNavBar}>

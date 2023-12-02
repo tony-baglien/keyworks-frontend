@@ -10,12 +10,17 @@ header {
     padding: 0 2rem !important;
     overflow: visible;
 
-    .logo {
+    .logo_wrapper {
         text-decoration: none;
-        font-family: $header-font-family;
-        font-size: $h2;
-        color: $white;
+        .logo {
+            text-decoration: none;
+            font-family: $header-font-family;
+            font-size: $h2;
+            color: $white;
+        }
     }
+
+
 
     nav {
         position: fixed;
