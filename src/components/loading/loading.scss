@@ -1,0 +1,52 @@
+@import "../../sassStyles/variables";
+@import "../../sassStyles/typography";
+@import "../../sassStyles/animations";
+@import "../../sassStyles/mixins";
+
+.loading-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $neon-orange;
+    opacity: 0;
+
+    h2 {
+        font-size: $h1;
+        font-family: $body-font-family;
+        color: $white;
+    }
+
+    .heart {
+        height: 10rem;
+        aspect-ratio: 1;
+        fill: $neon-pink;
+        animation: animateHeart 2s infinite;
+    }
+
+    @include md {
+      flex-direction: row;
+    }
+
+    //loading animation
+  &-enter {
+    opacity: 0;
+  }
+  &-enter-done {
+    opacity: 1;
+    transition: opacity 1000ms;
+  }
+
+  &-exit {
+    opacity: 1;
+  }
+  &-exit-active {
+    opacity: 0;
+    transition: opacity 1000ms;
+  }
+}
+
+
+
