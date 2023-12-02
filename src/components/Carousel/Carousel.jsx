@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Carousel.scss";
 const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const data = ["src/assets/img/fullKitAngle.svg","src/assets/img/fullKitProfile.svg","src/assets/img/keySwitch.svg"]
+    const data = ["/assets/img/fullKitAngle.svg","/assets/img/fullKitProfile.svg","/assets/img/keySwitch.svg"]
 
     const infiniteScroll = () => {
         if (activeIndex === data.length - 1) {
